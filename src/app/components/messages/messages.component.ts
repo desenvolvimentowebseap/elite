@@ -15,7 +15,6 @@ export class MessagesComponent implements OnInit {
 
   }
 
-
   ngOnInit(): void {}
 
   faTimes = faTimes

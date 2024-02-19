@@ -32,16 +32,13 @@
     <div class="form-group">
         <label for="description"> Descrição: </label>
         <textarea placeholder="Digite aqui a legenda" required formControlName="description" ></textarea>
-        <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
-            <p *ngIf="description.errors?.['required']"> A Descrição é Obrigatória. </p>
-        </div>
+        <!--<div *ngIf="description.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="description.errors?.['required']"> A Descrição é Obrigatória. </p> 
+        </div> --> 
     </div>
     <div class="form-group">
         <label for="title"> Endereço: </label>
         <input type="text" placeholder="Coloque seu logradouro com Número" formControlName="title" required />
-        <div *ngIf="title.invalid && formDir.submitted" class="validation-error">
-            <p *ngIf="title.errors?.['required']"> O Título é obrigatório. </p>
-        </div>
     </div>
     
     <div class="form-group">

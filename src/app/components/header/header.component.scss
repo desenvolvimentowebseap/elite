@@ -1,14 +1,16 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 4em;
     border-bottom: 1px solid #777;
+    background-color:#ffffff;
 }
 
 .brand, .links {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 7em;
 }
 
 .brand img {
@@ -25,7 +27,7 @@ nav {
 }
 
 .links li {
-    margin-right: 1em;
+    margin-right: 7em;
     list-style: none;
 }
 
@@ -42,5 +44,5 @@ nav {
 }
 
 #add a:hover {
-    background-color: #777;
+    background-color: #000000;
 }

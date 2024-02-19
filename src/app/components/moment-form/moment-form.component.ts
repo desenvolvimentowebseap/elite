@@ -21,7 +21,7 @@ export class MomentFormComponent implements OnInit {
     this.momentForm = new FormGroup({
       id: new FormControl(this.momentData ? this.momentData.id : ''),
       title: new FormControl(this.momentData ? this.momentData.title : '', [Validators.required]),
-      description: new FormControl(this.momentData ? this.momentData.description : '', [Validators.required]),
+  /*  description: new FormControl(this.momentData ? this.momentData.description : '', [Validators.required]), */
       image: new FormControl(''),
     });
   }
@@ -34,9 +34,9 @@ export class MomentFormComponent implements OnInit {
     return this.momentForm.get('name');
   }
 
-  get description() {
+  /* get description() {
     return this.momentForm.get('description')!;
-  }
+  } */
 
   onFileSelected(event: any){
     const file: FileList = event.target.files[0]

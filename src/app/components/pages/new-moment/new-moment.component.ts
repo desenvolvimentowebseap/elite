@@ -14,7 +14,7 @@ import { MessagesService } from 'src/app/services/messages.service';
 export class NewMomentComponent implements OnInit {
   ngOnInit(): void {}
 
-  constructor(private momentService: MomentService, 
+  constructor(private momentService: MomentService,
     private messagesService: MessagesService,
     private router: Router) { }
 
@@ -35,7 +35,7 @@ export class NewMomentComponent implements OnInit {
 
     this.messagesService.add("Momento adicionado com sucesso");
 
-    this.router.navigate(['/']);
+    this.router.navigate(['/acompanhantes']);
     
     }
 }
